@@ -4,6 +4,9 @@ jobs:
     Install_jobs:
         runs-on: ubuntu-latest
         steps:
+            - name: checkut the file
+              uses: actions/checkout@v3
+              
             - name: list the file
               run: ls -lrt
 
