@@ -1,7 +1,7 @@
 name: my work flow
 on: push
 jobs:
-    Install jobs:
+    Install_jobs:
         runs-on: ubuntu-latest
         steps:
             - name: list the file
