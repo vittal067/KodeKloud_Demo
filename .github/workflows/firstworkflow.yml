@@ -1,14 +1,14 @@
-name: my work flow
+name: demo work flow
 on: push
 jobs:
-    Install_jobs:
-        runs-on: ubuntu-latest
-        steps:
-            - name: checkut the file
-              uses: actions/checkout@v3
-              
-            - name: list the file
-              run: ls -lrt
+    first_job:
+      runs-on: ubuntu-latest
+      steps:
+      - name: get the file
+        uses: actions/checkout@v3
 
-            - name: read the file
-              run: cat README.md
+      - name: display the file
+        run: ls
+
+      - name: edit the file
+        run: echo "this is a demo file" 
