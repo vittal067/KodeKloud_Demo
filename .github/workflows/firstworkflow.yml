@@ -1,19 +1,11 @@
-name: my_first_work_flow
-
-on: workflow_dispatch
-
-jobs: 
-    first_job:
+name: my work flow
+on: push
+jobs:
+    Install jobs:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout code
-              uses: actions/checkout@v3
-
-            - name: this is my first file
-              run: echo "this is my first job"
-
             - name: list the file
               run: ls -lrt
 
-            - name: Read the file
+            - name: read the file
               run: cat README.md
