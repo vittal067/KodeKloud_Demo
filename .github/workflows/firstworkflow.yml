@@ -1,6 +1,6 @@
 name: my_first_work_flow
 
-on: push
+on: workflow_dispatch
 
 jobs: 
     first_job:
@@ -9,10 +9,11 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v3
 
-            - name: Run a one-line script
-              run: echo Hello, world!
+            - name: this is my first file
+              run: echo "this is my first job"
 
-            - name: Run a multi-line script
-              run: |
-                echo Add other actions to build,
-                echo test, and deploy your project.
+            - name: list the file
+              run: ls -lrt
+
+            - name: Read the file
+              run: cat README.md
